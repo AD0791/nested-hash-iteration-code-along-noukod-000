@@ -16,7 +16,7 @@ require 'pry'
 
 def remove_strawberry(contacts)
   contacts.each_char { |keys, data|
-    data.each_char { |akey avalue|
+    data.each_char { |akey avalues|
       if avalue == "strawberry"
         data.delete("strawberry")
       end
