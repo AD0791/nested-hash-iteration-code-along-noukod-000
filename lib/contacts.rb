@@ -18,7 +18,7 @@ def remove_strawberry(contacts)
   contacts.each_char { |keys, data|
     data.each_char { |avalue|
       if avalue == "strawberry"
-        data.pop("strawberry")
+        data.delete("strawberry")
       end
     }
   }
